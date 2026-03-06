@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= brandName %> | Modern E-commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hero-gradient { background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.9)); }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-900">
+
+    <div class="bg-indigo-700 text-white text-center py-2 text-xs font-bold tracking-widest uppercase">
+        GRATIS ONGKIR SELURUH INDONESIA - KHUSUS HARI INI!
+    </div>
+
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+        
+        <div class="flex items-center w-1/4">
+            <a href="/" class="text-3xl font-extrabold text-slate-900 tracking-tighter">
+                DNA<span class="text-indigo-600 italic text-4xl">TOTO</span>
+            </a>
+        </div>
+
+        <div class="hidden md:flex flex-1 justify-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-600">
+            <a href="#produk" class="hover:text-indigo-600 transition border-b-2 border-transparent hover:border-indigo-600 py-2">Produk</a>
+            <a href="#kategori" class="hover:text-indigo-600 transition border-b-2 border-transparent hover:border-indigo-600 py-2">Kategori</a>
+            <a href="#testimoni" class="hover:text-indigo-600 transition border-b-2 border-transparent hover:border-indigo-600 py-2">Testimoni</a>
+        </div>
+
+        <div class="flex items-center justify-end space-x-6 w-1/4">
+            <div class="flex items-center space-x-5 mr-4">
+                <a href="<%= loginUrl %>" target="_blank" class="text-[11px] font-black text-slate-700 hover:text-indigo-600 transition tracking-widest uppercase">
+                    LOGIN
+                </a>
+                <a href="<%= registerUrl %>" target="_blank" class="bg-indigo-600 text-white px-6 py-2.5 rounded-full text-[10px] font-black hover:bg-slate-900 transition tracking-widest uppercase shadow-lg shadow-indigo-100">
+                    Daftar
+                </a>
+            </div>
+
+            <div class="relative cursor-pointer hover:text-indigo-600 transition border-l pl-6 border-gray-200">
+                <i class="fa-solid fa-bag-shopping text-xl"></i>
+                <span class="absolute -top-2 -right-2 bg-red-500 text-white text-[9px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+    <header class="relative h-[85vh] flex items-center overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 hero-gradient"></div>
+        <div class="relative max-w-7xl mx-auto px-6 w-full text-white">
+            <h1 class="text-6xl md:text-8xl font-extrabold leading-none tracking-tighter mb-6">
+                QUALITY <br> <span class="text-indigo-500">REDEFINED.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-xl mb-10 leading-relaxed">
+                Temukan koleksi eksklusif Dnatoto yang menggabungkan fungsionalitas modern dengan estetika abadi.
+            </p>
+            <div class="flex space-x-4">
+                <a href="#produk" class="bg-indigo-600 hover:bg-indigo-700 text-white px-10 py-4 rounded-full font-bold transition flex items-center">
+                    Belanja Sekarang <i class="fa-solid fa-arrow-right ml-3"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="kategori" class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div class="flex flex-col items-center text-center p-4">
+                <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center text-2xl mb-4">
+                    <i class="fa-solid fa-box-open"></i>
+                </div>
+                <h3 class="font-bold text-lg">Packaging Mewah</h3>
+                <p class="text-sm text-gray-500 mt-2">Setiap pembelian dikemas dengan standar premium.</p>
+            </div>
+            <div class="flex flex-col items-center text-center p-4">
+                <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center text-2xl mb-4">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3 class="font-bold text-lg">Pengiriman Kilat</h3>
+                <p class="text-sm text-gray-500 mt-2">Sampai di tangan Anda dalam waktu kurang dari 48 jam.</p>
+            </div>
+            <div class="flex flex-col items-center text-center p-4">
+                <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center text-2xl mb-4">
+                    <i class="fa-solid fa-shield-heart"></i>
+                </div>
+                <h3 class="font-bold text-lg">Jaminan Kualitas</h3>
+                <p class="text-sm text-gray-500 mt-2">Garansi uang kembali 100% jika produk cacat.</p>
+            </div>
+            <div class="flex flex-col items-center text-center p-4">
+                <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center text-2xl mb-4">
+                    <i class="fa-solid fa-coins"></i>
+                </div>
+                <h3 class="font-bold text-lg">Reward Member</h3>
+                <p class="text-sm text-gray-500 mt-2">Dapatkan poin belanja untuk diskon masa depan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="produk" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="flex justify-between items-end mb-16">
+            <div>
+                <span class="text-indigo-600 font-bold uppercase tracking-[0.3em] text-xs">Explore Our Shop</span>
+                <h2 class="text-4xl font-extrabold mt-2 italic tracking-tighter">KOLEKSI TERBARU</h2>
+            </div>
+            <div class="hidden md:block">
+                <button class="px-6 py-2 border-b-2 border-slate-900 font-bold text-sm hover:text-indigo-600 transition">LIHAT SEMUA</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+            <% products.forEach(product => { %>
+            <div class="group relative">
+                <div class="aspect-[4/5] overflow-hidden bg-gray-100 rounded-2xl relative">
+                    <div class="absolute top-4 right-4 z-10">
+                        <span class="bg-white text-slate-900 px-4 py-1 rounded-full text-[10px] font-black uppercase shadow-sm tracking-widest"><%= product.tag %></span>
+                    </div>
+                    <img src="<%= product.img %>" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <button class="w-full bg-white text-slate-900 py-4 rounded-xl font-bold shadow-2xl translate-y-4 group-hover:translate-y-0 transition duration-500">
+                            QUICK ADD +
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-6 flex justify-between items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900"><%= product.name %></h3>
+                        <p class="text-gray-500 text-sm mt-1 uppercase tracking-widest font-semibold">Series DNA-2026</p>
+                    </div>
+                    <p class="text-indigo-600 font-bold text-lg">IDR <%= product.price %></p>
+                </div>
+            </div>
+            <% }) %>
+        </div>
+    </section>
+
+    <section id="testimoni" class="py-24 bg-slate-900 text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <h2 class="text-4xl font-extrabold text-center mb-16 italic">#DNATOTO-SQUAD</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-800/50 p-8 rounded-3xl border border-slate-700">
+                    <div class="flex text-yellow-400 mb-4 italic">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed italic">"Gak nyangka kualitasnya se-premium ini. Packagingnya benar-benar niat. Sangat puas!"</p>
+                    <div class="mt-6 font-bold text-indigo-400">— Kevin Sanjaya</div>
+                </div>
+                <div class="bg-slate-800/50 p-8 rounded-3xl border border-slate-700 scale-105 shadow-2xl">
+                    <div class="flex text-yellow-400 mb-4 italic">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed italic">"Dnatoto adalah standar baru buat belanja gadget dan lifestyle. Pengiriman super cepat!"</p>
+                    <div class="mt-6 font-bold text-indigo-400">— Sarah Wijaya</div>
+                </div>
+                <div class="bg-slate-800/50 p-8 rounded-3xl border border-slate-700">
+                    <div class="flex text-yellow-400 mb-4 italic">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed italic">"Barangnya awet, desainnya gak pasaran. Udah langganan di sini dari tahun lalu."</p>
+                    <div class="mt-6 font-bold text-indigo-400">— Dimas Pratama</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white pt-20 pb-10 px-6 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-1">
+                <div class="text-3xl font-extrabold text-slate-900 mb-6 italic tracking-tighter">DNA<span class="text-indigo-600">TOTO.</span></div>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    Menghadirkan kurasi produk teknologi dan gaya hidup terbaik untuk Anda yang menghargai kualitas dan estetika.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Categories</h4>
+                <ul class="text-sm text-gray-500 space-y-4">
+                    <li><a href="#" class="hover:text-indigo-600 transition">Lifestyle Tech</a></li>
+                    <li><a href="#" class="hover:text-indigo-600 transition">Leather Goods</a></li>
+                    <li><a href="#" class="hover:text-indigo-600 transition">Limited Edition</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Support</h4>
+                <ul class="text-sm text-gray-500 space-y-4">
+                    <li><a href="#" class="hover:text-indigo-600 transition">Tracking Order</a></li>
+                    <li><a href="#" class="hover:text-indigo-600 transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-indigo-600 transition">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Stay Connected</h4>
+                <div class="flex space-x-4 mb-6">
+                    <a href="#" class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center hover:bg-indigo-600 hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center hover:bg-indigo-600 hover:text-white transition"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center hover:bg-indigo-600 hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="text-[10px] text-gray-400 uppercase font-bold tracking-[0.2em]">© 2026 DNATOTO DIGITAL GROUP.</div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
