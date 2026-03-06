@@ -3,16 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title><%= brandName %> | Excellence Redefined</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title><%= brandName %> | Destinasi Produk Teknologi & Gaya Hidup Premium</title>
+    <meta name="description" content="Dnatoto adalah platform e-commerce eksklusif yang menyediakan koleksi hardware, aksesoris tech, dan kebutuhan gaya hidup modern dengan garansi resmi dan kualitas terbaik.">
+    <meta name="keywords" content="Dnatoto, e-commerce gadget, aksesoris premium, produk teknologi, gaya hidup modern, belanja online aman">
+    <meta name="author" content="<%= brandName %>">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://dnatoto4d.vercel.app/" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dnatoto4d.vercel.app/">
+    <meta property="og:title" content="<%= brandName %> | Excellence Redefined">
+    <meta property="og:description" content="Dapatkan koleksi perangkat teknologi terbaru dengan standar global hanya di <%= brandName %>.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1441986300917-64674bd600d8"> <meta property="og:site_name" content="<%= brandName %>">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= brandName %> | Excellence Redefined">
+    <meta name="twitter:description" content="Platform e-commerce premium untuk gaya hidup digital Anda.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1441986300917-64674bd600d8">
+
+    <link rel="icon" type="image/png" href="/favicon.png"> <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
         
-        /* Navigasi Mobile Slate Gelap */
         #mobileMenu {
-            background-color: #0f172a; /* Slate-900 */
+            background-color: #0f172a; 
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             transform: translateX(100%);
             opacity: 0;
@@ -25,7 +43,6 @@
             pointer-events: auto !important;
         }
 
-        /* Padding bawah khusus mobile agar tidak tertutup floating button */
         @media (max-width: 1023px) {
             body { padding-bottom: 90px; }
         }
